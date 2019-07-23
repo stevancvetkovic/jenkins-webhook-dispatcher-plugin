@@ -12,7 +12,7 @@
     <version>1.0</version>
     <packaging>hpi</packaging>
     <properties>
-        <jenkins.version>2.164.3</jenkins.version>
+        <jenkins.version>2.176.1</jenkins.version>
         <java.level>8</java.level>
         <json.api.version>1.0</json.api.version>
         <json.version>1.0.4</json.version>
@@ -37,6 +37,24 @@
             <groupId>org.glassfish</groupId>
             <artifactId>javax.json</artifactId>
             <version>${json.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-job</artifactId>
+            <version>2.15</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci</groupId>
+            <artifactId>annotation-indexer</artifactId>
+            <version>1.12</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci</groupId>
+            <artifactId>symbol-annotation</artifactId>
+            <version>1.5</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
